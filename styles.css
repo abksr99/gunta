@@ -1,69 +1,79 @@
+/* General Styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
+    font-size: 1.1em;
+    color: #333;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
     background-color: #f8f9fa;
+    line-height: 1.6;
 }
 
-header {
-    background: #007BFF;
-    color: #fff;
-    padding: 20px;
+header, footer {
+    background-color: #007bff;
+    color: white;
     text-align: center;
+    padding: 1em;
 }
 
-nav {
-    background: #343a40;
-    color: #fff;
-    padding: 10px 0;
+header h1 {
+    margin: 0;
+    font-size: 2em;
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #0056b3;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin: 0 1em;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
 }
 
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Watermark Hero Section */
 #hero {
-    text-align: center;
-    margin: 20px 0;
+    position: relative;
+    background-image: url("spic.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.1; /* Subtle watermark effect */
+    height: 200px; /* Adjust as needed */
 }
 
-.hero-image {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    border-radius: 10px;
-}
-
+/* Section Styling */
 section {
-    padding: 20px;
-    margin: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 h2 {
-    color: #007BFF;
+    color: #007bff;
+    font-size: 1.75em;
+    margin-top: 0;
+}
+
+/* Contact and Footer */
+#contact p, footer p {
+    font-size: 0.9em;
+    color: #666;
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
-    background: #343a40;
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    font-size: 0.8em;
+    padding: 1em;
 }
